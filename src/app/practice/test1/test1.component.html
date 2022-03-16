@@ -1,0 +1,32 @@
+<!-- Built-in Pipes -->
+<!-- syntax: <element>{{<input_data> | <name_of_pipe>}}</element> -->
+   <h1>Buit-in pipes example</h1>
+<p><span>uppercase: </span>{{name | uppercase}}</p>
+
+<p><span>lowercase: </span>{{word | lowercase}}</p>
+
+
+<p><span>DATE: </span>{{dateExample | date}}</p>
+
+<p><span>josn_Object :</span>{{ jsonExample | json}}</p>
+
+<div><span>Currency : </span>{{currencyExample | currency}}</div>
+
+<h3>Paramterized pipes</h3>
+
+<div><span>Currency : </span>{{currencyExample | currency : 'IND'}}</div>
+<div><span>Currency : </span>{{currencyExample | currency : 'CAD'}}</div>
+<div><span>Currency : </span>{{currencyExample | currency : 'USD'}}</div>
+
+<p><span>DATE: </span>{{dateExample | date :'mm-dd-yy'}}</p>
+<p><span>DATE: </span>{{dateExample | date : 'short'}}</p>
+<p><span>DATE: </span>{{dateExample | date : 'long'}}</p>
+
+<h3>chaining pipes</h3>
+<p><span>DATE: </span>{{dateExample | date | lowercase}}</p>
+<div><span>Currency : </span>{{currencyExample | currency :'CAD'|lowercase}}</div>
+
+
+
+
+
